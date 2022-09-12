@@ -1,0 +1,64 @@
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\appsettings.json
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\SE1616_Group3_Project.exe
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\SE1616_Group3_Project.deps.json
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\SE1616_Group3_Project.runtimeconfig.json
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\SE1616_Group3_Project.runtimeconfig.dev.json
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\SE1616_Group3_Project.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\ref\SE1616_Group3_Project.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\SE1616_Group3_Project.pdb
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Humanizer.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.Data.SqlClient.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.Identity.Client.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.AssemblyInfoInputs.cache
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.AssemblyInfo.cs
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\staticwebassets\SE1616_Group3_Project.StaticWebAssets.Manifest.cache
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\staticwebassets\SE1616_Group3_Project.StaticWebAssets.xml
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\scopedcss\bundle\SE1616_Group3_Project.styles.css
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.RazorTargetAssemblyInfo.cache
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.csproj.CopyComplete
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\ref\SE1616_Group3_Project.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.pdb
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.genruntimeconfig.cache
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Azure.Core.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Azure.Identity.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ADMIN\Documents\GitHub\Project_PRN211\SE1616_Group3_Project\SE1616_Group3_Project\bin\Debug\net5.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\nhiep\Desktop\Baking Ingredients\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.dll
+C:\Users\nhiep\Desktop\Baking Ingredients\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.pdb
+C:\Users\nhiep\Desktop\Baking Ingredients\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.csproj.AssemblyReference.cache
+C:\Users\nhiep\Desktop\Baking Ingredients\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nhiep\Desktop\Baking Ingredients\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.AssemblyInfoInputs.cache
+C:\Users\nhiep\Desktop\Baking Ingredients\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.AssemblyInfo.cs
+C:\Users\nhiep\Desktop\Baking Ingredients\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.csproj.CoreCompileInputs.cache
+C:\Users\nhiep\Desktop\Baking Ingredients\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nhiep\Desktop\Baking Ingredients\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.RazorAssemblyInfo.cache
+C:\Users\nhiep\Desktop\Baking Ingredients\SE1616_Group3_Project\SE1616_Group3_Project\obj\Debug\net5.0\SE1616_Group3_Project.RazorAssemblyInfo.cs

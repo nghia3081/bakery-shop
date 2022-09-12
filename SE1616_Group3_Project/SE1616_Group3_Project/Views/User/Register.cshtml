@@ -1,0 +1,49 @@
+﻿@model SE1616_Group3_Project.Models.User
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5 pb-3">
+        <h1 class="display-4 text-white animated slideInDown mb-3">Products</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" >Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" ">User</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">Register</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Carousel Start -->
+<div class="container bg-light" style="border-radius:15px;">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-lg-12 text-center  justify-content-center">
+                <h1 style="color:orange">Register</h1>
+                <strong>@ViewBag.msg</strong>
+                 <div class="col-lg-4 p-4" style="border-radius:10px;margin:0 auto">
+                    <form asp-action="Register" asp-controller="User">
+                        
+                            <input asp-for="Email" class="form form-control mb-2" type="email" placeholder="Email" required />
+                            <input asp-for="Password" class="form form-control mb-2" type="password" placeholder="Password" required />
+                            <input asp-for="Name" class="form form-control mb-2" placeholder="Your name" required />
+                            <input asp-for="Phone" class="form form-control mb-2" placeholder="Phone" required />
+                            <div class="form form-control mb-2 text-start">
+                                <input asp-for="Gender" type="radio" class="form form-check-input" value="1" checked />
+                                <label for="male" class="form form-label">Male</label>
+
+                                <input asp-for="Gender" type="radio" class="form form-check-input" value="0" />
+                                <label for="female" class="form form-label">Female</label>
+                            </div>
+                            <input type="hidden" asp-for="RoleId" value="3" />
+
+                            <input class="btn btn-primary" type="submit" value="Register" />
+                        
+                    </form>
+                    <p style="color:black">Already have account? <a asp-action="Login">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Carousel End -->

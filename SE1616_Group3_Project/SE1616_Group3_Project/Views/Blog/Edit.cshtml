@@ -1,0 +1,48 @@
+﻿@model SE1616_Group3_Project.Models.Blog
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5 pb-3">
+        <h1 class="display-4 text-white animated slideInDown mb-3">Blogs</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" >Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" >Blogs</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">Edit</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Product Start -->
+<div class="container bg-light" style="">
+    <div class="container">
+        <div class="bg-primary text-light rounded-bottom p-5 my-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-4 align-items-center">
+
+                <h1 class="display-4 text-light mb-0">Edit blog @Model.Title</h1>
+               
+               
+            </div>
+            
+        </div>
+        <div class="row g-4">
+            <img src="~/@Model.PhotoLink"/>
+            <form asp-action="Edit" asp-controller="Blog" enctype="multipart/form-data"> 
+                <input type="hidden" asp-for="Id" value="@Model.Id"/>
+                <input type="hidden" asp-for="PhotoLink" value="@Model.PhotoLink"/>
+                <input type="hidden" asp-for="Owner" value="@Model.Owner"/>
+                <input type="hidden" asp-for="EnableStatus" value="@Model.EnableStatus" />
+                 <label for="file">Image</label>
+                <input type="file" class="form form-control mb-2" name="file"   />
+                <label asp-for="Title"></label>
+                <input class="form form-control mb-2" asp-for="Title" value="@Model.Title" required/>
+                 <label asp-for="Detail"></label>
+                <textarea class="form form-control mb-2" name="Detail" required >@Model.Detail</textarea>
+                <input class="btn btn-primary mb-2" type="submit" value="Update" />
+                
+            </form>
+            
+        </div>
+    </div>
+</div>
+<!-- Product End -->

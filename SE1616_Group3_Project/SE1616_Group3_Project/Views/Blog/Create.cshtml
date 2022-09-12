@@ -1,0 +1,43 @@
+﻿@model SE1616_Group3_Project.Models.Blog
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5 pb-3">
+        <h1 class="display-4 text-white animated slideInDown mb-3">Blogs</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" >Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" >Blogs</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">Create</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Product Start -->
+<div class="container bg-light" style="">
+    <div class="container">
+        <div class="bg-primary text-light rounded-bottom p-5 my-6 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="row g-4 align-items-center">
+
+                <h1 class="display-4 text-light mb-0">Share Your Experiences</h1>
+               
+               
+            </div>
+            
+        </div>
+        <div class="row g-4">
+            <form asp-action="Create" asp-controller="Blog" enctype="multipart/form-data">
+                <label for="file">Image</label>
+                <input type="file" class="form form-control mb-2" name="file"  required />
+                <label asp-for="Title"></label>
+                <input class="form form-control mb-2" asp-for="Title" required/>
+                 <label asp-for="Detail"></label>
+                <textarea class="form form-control mb-2" name="Detail" required ></textarea>
+                <input class="btn btn-primary mb-2" type="submit" value="Create" />
+                
+            </form>
+            
+        </div>
+    </div>
+</div>
+<!-- Product End -->

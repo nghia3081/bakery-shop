@@ -1,0 +1,46 @@
+﻿@model SE1616_Group3_Project.Models.Product
+
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5 pb-3">
+        <h1 class="display-4 text-white animated slideInDown mb-3">Products</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" >Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" >Products</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">Detail</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Product Start -->
+<div class="container bg-light rounded" style="">
+    <div class="container">
+        <div class="bg-primary text-light rounded p-5 mt-0 mx-auto wow fadeInUp" data-wow-delay="0.1s">
+
+            <div class="row text-center">
+
+                <h1 class="display-4 text-light mb-0">@Model.Name</h1>
+
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-4">
+                <div class="row mb-2" >
+                    <img style="border-radius:15px" class="w-100 h-100 p-0" src="~/@Model.PhotoLink" />
+                </div>
+                <div class="row">
+                    <a class="btn btn-primary" asp-action="Add" asp-controller="Cart" asp-route-id="@Model.Id"><i class="bi bi-cart-plus"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-8" style="text-align:justify">
+                <strong>@Model.Price$</strong>
+               <br /> <strong>Remaining: @Model.Quantity</strong>
+                <p>@Model.Detail</p>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- Product End -->
