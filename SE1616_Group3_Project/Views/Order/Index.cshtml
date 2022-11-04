@@ -1,0 +1,329 @@
+﻿@model SE1616_Group3_Project.Models.User
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5 pb-3">
+        <h1 class="display-4 text-white animated slideInDown mb-3">Orders</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white">Order</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">My Order</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<script>
+    function
+</script>
+<!-- Product Start -->
+<div class="container bg-light" style="">
+    <div class="container">
+        <div class="row g-4">
+            <div class="bg-primary text-light rounded-bottom p-5 mb-2 mt-0 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="row align-items-center">
+                    <h3>Search bar</h3>
+                    <div class="col-lg-4">
+                        <input onchange='search()' class="form form-control" type="date" id='searchDate' placeholder="Search by order date">
+                    </div>
+                    <div class="col-lg-4">
+                        <input id="searchContent" oninput="search()" type="search" class="form form-control" placeholder="Enter a content to search" />
+                    </div>
+                    <div class="col-lg-4">
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="row paginate mt-4 mb-4">
+                <div class='col-lg-4 text-left'>
+                </div>
+                <div class='col-lg-4  text-center' id='pagination'>
+                </div>
+                <div style="text-align:right;" class='col-lg-4'>
+                </div>
+
+
+
+            </div>
+            <div class="col-lg-12" id="content">
+                @foreach (Order o in @ViewBag.orders)
+                {
+                    <div class="row bg-primary mb-2 text-white p-2 rounded pItem" style="color:white">
+
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <p>
+                                    <strong>Name:</strong> @o.UserName
+                                </p>
+                                <p><strong>Phone:</strong> @o.Phone</p>
+                                <p><strong>Shipping Address:</strong> @o.ShipAddress</p>
+                                <p><strong>Total Amount: </strong> @o.Amount</p>
+                                <p><strong>Payment method:</strong> @o.PaymentMethodNavigation.Method</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <form asp-action="OrderComplete" asp-controller="Order">
+                                    <input type="hidden" name="Id" value="@o.Id" />
+                                    @{
+
+                                        bool enableOrderComplete = true;
+                                        bool ShippingCompleted = false;
+                                        @foreach (OrderItem ot in @o.OrderItems)
+                                        {
+
+                                            @if (ot.DeliveryStatuses.Count < 1)
+                                            {
+                                                enableOrderComplete = false;
+                                            }
+                                            @foreach (DeliveryStatus ds in @ot.DeliveryStatuses)
+                                            {
+                                                if (ds.ShippingCompleted)
+                                                {
+                                                    ShippingCompleted = true;
+                                                }
+                                            }
+                                        }
+                                        if (enableOrderComplete && !ShippingCompleted)
+                                        {
+                                            <button onclick="OrderComplete()" class="btn btn-success">Order Completed Confirm</button>
+
+                                        }
+
+
+
+
+                                    }
+                                </form>
+                            </div>
+                        </div>
+
+                        <table class="table text-center">
+                            <tr>
+                                <th>
+                                    Photo
+                                </th>
+                                <th>
+                                    Product Name
+                                </th>
+                                <th>
+                                    Quantity
+                                </th>
+                                <th>
+                                    Bought Price
+                                </th>
+                                <th>
+                                    Bought Date
+                                </th>
+
+                                <th>
+                                    Shipping Status
+                                </th>
+
+                            </tr>
+
+                            @foreach (OrderItem ot in @o.OrderItems)
+                            {
+                                bool enableFeedback = false;
+                                <tr>
+
+                                    <td style="width:10%;height:10%">
+                                        <img class="w-100 h-100" src="~/@ot.PhotoLink" />
+                                    </td>
+                                    <td>
+                                        @ot.ProductName
+                                    </td>
+                                    <td>
+                                        @ot.Quantity
+                                    </td>
+                                    <td>
+                                        @ot.Price
+                                    </td>
+                                    <td>
+                                         @(((DateTime)ot.BoughtDate).ToString("yyyy-MM-dd hh:mm"))
+                                    </td>
+
+
+
+                                    <td>
+                                        @foreach (DeliveryStatus ds in @ot.DeliveryStatuses)
+                                        {
+
+                                            @if (ds.OrderItem == ot.Id)
+                                            {
+                                                @if (ds.ShippingCompleted == true)
+                                                {
+
+                                                    enableFeedback = true;
+
+
+                                                }
+                                                else
+                                                {
+                                                    enableFeedback = false;
+                                                }
+                                                <p>@ds.DeliveryUnit - @ds.ShippingStatus - @ds.UpdatedTime</p>
+                                            }
+
+                                        }
+                                    </td>
+
+
+                                </tr>
+                            }
+
+                        </table>
+
+                    </div>
+                }
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Product End -->
+<script>
+    function next(page) {
+        goTo(page + 1);
+    }
+    function prev(page) {
+        goTo(page - 1);
+    }
+    function dataPaginate() {
+        var a = document.getElementById("content");
+        var b = a.getElementsByClassName("pItem");
+        var c = new Array();
+        for (var i = 0; i < b.length; i++) {
+            b[i].style.visibility = 'visible';
+            if (b[i].style.display !== 'none') {
+                c.push(b[i]);
+            }
+        }
+
+        return c;
+    }
+    function addPageButton(page) {
+        var button = "<button id='page" + page + "' onclick='goTo(" + page + ")' class='btn btn-primary'>" + page + "</button>";
+        return button;
+    }
+    var totalPage;
+    var toSet = dataPaginate();
+    var pageSize = 2;
+    function generatePaginationButton() {
+
+        var dataSource = toSet;
+        if (dataSource.length < pageSize) {
+            totalPage = 1;
+        } else
+            if (dataSource.length % pageSize === 0) {
+                totalPage = dataSource.length / pageSize;
+            } else {
+                totalPage = dataSource.length / pageSize + 1;
+            }
+
+
+        document.getElementById("pagination").innerHTML = "";
+        for (var i = 1; i <= totalPage; i++) {
+            document.getElementById("pagination").innerHTML += addPageButton(i);
+        }
+
+        if (totalPage > 0) {
+            document.getElementById("page" + 1).setAttribute("class", "btn btn-primary disabled m-2");
+        }
+
+
+
+    }
+
+    function enableButton(except, dataLength) {
+
+
+        if (except > 0 && dataLength !== 0) {
+            document.getElementById("page" + except).setAttribute("class", "btn btn-primary disabled m-2");
+            for (var i = 1; i <= dataLength; i++) {
+
+                if (except !== i) {
+                    document.getElementById("page" + i).setAttribute("class", "btn btn-primary m-2");
+                }
+
+            }
+        }
+
+
+
+    }
+
+    function goTo(page) {
+
+
+        var dataLength = toSet.length;
+
+        if (toSet.length % pageSize === 0) {
+            totalPage = toSet.length / pageSize;
+        } else {
+            totalPage = toSet.length / pageSize + 1;
+        }
+
+
+        var start = (page - 1) * pageSize;
+        if (pageSize === 1) {
+            for (var i = 0; i < dataLength; i++) {
+                if (i !== start) {
+                    toSet[i].style.display = 'none';
+                } else {
+                    toSet[i].style.display = 'block';
+                }
+
+            }
+
+
+        } else {
+            var end = start + pageSize;
+            if (end > dataLength) {
+                end = pageSize;
+            }
+            for (var i = 0; i < dataLength; i++) {
+                if (i < start || i > end) {
+                    toSet[i].style.display = 'none';
+                } else {
+                    toSet[i].style.display = 'block';
+                }
+            }
+        }
+
+
+
+        enableButton(page, totalPage);
+
+    }
+
+
+
+
+
+    function search() {
+        var textSearch = document.getElementById("searchContent").value.toLowerCase();
+        var dateSearch = document.getElementById("searchDate").value.toLowerCase();
+
+        $("#content .pItem").filter(function() {
+
+            if (dateSearch !== undefined) {
+                $(this).toggle($(this).text().toLowerCase().indexOf(textSearch) > -1
+                    && $(this).text().toLowerCase().indexOf(dateSearch) > -1
+                );
+
+            } else {
+                $(this).toggle($(this).text().toLowerCase().indexOf(textSearch) > -1);
+            }
+
+
+
+
+
+        });
+        toSet = dataPaginate();
+        generatePaginationButton();
+    }
+
+    generatePaginationButton();
+</script>

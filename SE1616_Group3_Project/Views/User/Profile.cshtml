@@ -1,0 +1,100 @@
+﻿@model SE1616_Group3_Project.Models.User
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5 pb-3">
+        <h1 class="display-4 text-white animated slideInDown mb-3">Products</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" >Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" >User</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page"> Profile</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Product Start -->
+<div class="container bg-light" style="">
+    <div class="container text-center">
+        <div class="row g-4">
+            <div class="col-lg-4" style="border:1px solid grey">
+
+                @if (Model.PhotoLink == null)
+                {
+                    <strong>No Image</strong>
+                }
+                else
+                {
+                    <img style="object-fit:cover" class="w-100 h-100 " src="~/@Model.PhotoLink" />
+                }
+            </div>
+            <div class="col-lg-8 text-start">
+                <form asp-action="Update" asp-controller="User" enctype="multipart/form-data">
+                    <label for="file">Photo</label>
+                    <input type="file" name="file" class="form form-control  mb-2" />
+
+                    <input type="hidden" asp-for="PhotoLink" value="@Model.PhotoLink" />
+
+                    <input type="hidden" asp-for="RoleId" value="@Model.RoleId" />
+                    <label asp-for="Email"></label>
+                    <input class="form form-control mb-2" asp-for="Email" readonly />
+                    <label asp-for="Name"></label>
+                    <input class="form form-control mb-2" asp-for="Name" placeholder="Enter your name"/>
+                    <label asp-for="Phone"></label>
+                    <input class="form form-control mb-2" asp-for="Phone" placeholder="Enter your phone number"/>
+                    <label asp-for="Address"></label>
+                    <input class="form form-control mb-2" asp-for="Address" placeholder="Enter your address" />
+                    <label asp-for="Age"></label>
+                    <input class="form form-control mb-2" asp-for="Age" min="1" placeholder="Enter your age" />
+                    <div class="form form-control mb-2 text-start">
+                        @if (Model.Gender == true)
+                        {
+                            <input asp-for="Gender" type="radio" class="form form-check-input" value="true" checked />
+                            <label for="male" class="form form-label">Male</label>
+
+                            <input asp-for="Gender" type="radio" class="form form-check-input" value="false" />
+                            <label for="female" class="form form-label">Female</label>
+                        }
+                        else
+                        {
+                            <input asp-for="Gender" type="radio" class="form form-check-input" value="true" />
+                            <label for="male" class="form form-label">Male</label>
+
+                            <input asp-for="Gender" type="radio" class="form form-check-input" value="false" checked />
+                            <label for="female" class="form form-label">Female</label>
+                        }
+
+                    </div>
+                    
+                    <input type="password" class="form form-control mb-2" id="newPassword" required name="Password" placeholder="Enter password to update profile" />
+                    
+                    <div class="row text-center">
+                        <div class="col-lg-6">
+                            <input type="submit" id="submitBtn" class="btn btn-primary" value="Update" />
+                        </div>
+                        <div class="col-lg-6">
+                            <a class="btn btn-primary" asp-action="ChangePassword" asp-controller="User">Change Password</a>
+                        </div>
+                    </div>
+
+
+                </form>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<script>
+    function checkPassword() {
+        var newPassword = document.getElementById("newPassword").value;
+        var confirmPassword = document.getElementById("confirmPassword").value;
+        var submitBtn = document.getElementById("submitBtn");
+        if (newPassword !== confirmPassword) {
+            submitBtn.setAttribute("disabled", "");
+        } else {
+            submitBtn.removeAttribute("disabled");
+        }
+    }
+</script>
+<!-- Product End -->

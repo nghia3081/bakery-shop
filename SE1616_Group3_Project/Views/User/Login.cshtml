@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Login";
+}
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5 pb-3">
+        <h1 class="display-4 text-white animated slideInDown mb-3">Products</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white" >Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" >User</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">Login</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Carousel Start -->
+<div class="container bg-light" style="border-radius:15px;">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-lg-12 text-center  justify-content-center">
+                <h1 style="color:orange">Login</h1>
+                <strong>@ViewBag.msg</strong>
+                <div class="col-lg-4 p-4" style="border-radius:10px;margin:0 auto">
+                    <form asp-action="Login" asp-controller="User" id="login-form">
+                        
+                        <h3 style="color:red">@ViewBag.msg</h3>
+                        <div class="text-center">
+                            <input class="form form-control mb-2" type="text" name="email" id="email" placeholder="Email" />
+                            <input class="form form-control mb-2" type="password" name="password" id="password" placeholder="Password" />
+                            <input class="btn btn-primary" type="submit" value="Login">
+                        </div>
+                    </form>
+                    <p style="color:black">Don't have account? <a asp-action="Register">Register Now</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nhiep\\Desktop\\Baking Ingredients\\SE1616_Group3_Project\\SE1616_Group3_Project\\SE1616_Group3_Project.csproj": {}
+    "C:\\Users\\nhiep\\Music\\repos\\bakeryshop\\SE1616_Group3_Project\\SE1616_Group3_Project\\SE1616_Group3_Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nhiep\\Desktop\\Baking Ingredients\\SE1616_Group3_Project\\SE1616_Group3_Project\\SE1616_Group3_Project.csproj": {
+    "C:\\Users\\nhiep\\Music\\repos\\bakeryshop\\SE1616_Group3_Project\\SE1616_Group3_Project\\SE1616_Group3_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nhiep\\Desktop\\Baking Ingredients\\SE1616_Group3_Project\\SE1616_Group3_Project\\SE1616_Group3_Project.csproj",
+        "projectUniqueName": "C:\\Users\\nhiep\\Music\\repos\\bakeryshop\\SE1616_Group3_Project\\SE1616_Group3_Project\\SE1616_Group3_Project.csproj",
         "projectName": "SE1616_Group3_Project",
-        "projectPath": "C:\\Users\\nhiep\\Desktop\\Baking Ingredients\\SE1616_Group3_Project\\SE1616_Group3_Project\\SE1616_Group3_Project.csproj",
+        "projectPath": "C:\\Users\\nhiep\\Music\\repos\\bakeryshop\\SE1616_Group3_Project\\SE1616_Group3_Project\\SE1616_Group3_Project.csproj",
         "packagesPath": "C:\\Users\\nhiep\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nhiep\\Desktop\\Baking Ingredients\\SE1616_Group3_Project\\SE1616_Group3_Project\\obj\\",
+        "outputPath": "C:\\Users\\nhiep\\Music\\repos\\bakeryshop\\SE1616_Group3_Project\\SE1616_Group3_Project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -73,7 +73,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -85,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

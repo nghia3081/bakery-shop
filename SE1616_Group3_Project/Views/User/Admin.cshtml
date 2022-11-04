@@ -1,0 +1,116 @@
+﻿@model SE1616_Group3_Project.Models.User
+<!-- Page Header Start -->
+<div class="container-fluid page-header py-6 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container text-center pt-5 pb-3">
+        <h1 class="display-4 text-white animated slideInDown mb-3">Products</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a class="text-white">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white">Users</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page"> Management</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+<!-- Product Start -->
+<div class="container bg-light" style="">
+    <div class="container">
+        <div class="row g-4">
+
+            <div class="col-lg-12">
+                <table class="table text-center">
+                    <tr>
+                        <th>
+                            Avatar
+                        </th>
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Email
+                        </th>
+                        <th>
+                            Password
+                        </th>
+                        <th>
+                            Phone
+                        </th>
+                        <th>
+                            Gender
+                        </th>
+                        <th>
+                            Address
+                        </th>
+                        <th>
+                            Age
+                        </th>
+                        <th>
+                            Role
+                        </th>
+                        <th>
+
+                        </th>
+                    </tr>
+                    @foreach (User u in @ViewBag.allUser)
+                    {
+
+                        <tr>
+                            <form asp-action="Update" asp-controller="User">
+
+                                <input type="hidden" asp-for="Email" value="@u.Email" />
+                                @if (u.PhotoLink != null)
+                                {
+                                <td><img src="~/@u.PhotoLink" /></td>
+                                }
+                                else
+                                {
+                                <td><p>No image</p></td>
+                                }
+
+                            <td><p>@u.Name</p></td>
+                            <td><p>@u.Email</p></td>
+                            <td><p>@u.Password</p></td>
+                            <td><p>@u.Phone</p></td>
+                            <td>
+                                    @if (u.Gender == true)
+                                    {
+                                    <p>Male</p>
+                                    }
+                                    else
+                                    {
+                                    <p>Female</p>
+                                    }
+                            </td>
+                            <td><p>@u.Address</p></td>
+                            <td><p>@u.Age</p></td>
+                            <td>
+                                <select asp-for="RoleId">
+                                        @foreach (Role r in ViewBag.role)
+                                        {
+                                            if (r.Id == u.RoleId)
+                                            {
+                                            <option selected value="@r.Id">@r.Name</option>
+                                            }
+                                            else
+                                            {
+                                            <option value="@r.Id">@r.Name</option>
+                                            }
+                                        }
+                                </select>
+
+                            </td>
+
+                            </form>
+                            <td><a class="btn btn-danger" asp-action="Delete" asp-controller="User" asp-route-email="@u.Email">Delete</a></td>
+                        </tr>
+
+                    }
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!-- Product End -->

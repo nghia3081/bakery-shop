@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WP4Q9ZI5MbyltP2Eu/317bqDMs1MGqH0plmW5JVs4nFP3PiKEfjz7ECLbCtyb67/LaB7HvuwF2HpthzW0hTptA==",
+  "dgSpecHash": "FxMi6C04GELaRrOQxUUB3Rf29LZTvYrOIYO7cenPT7WsojTfR4oQzw2QmA61ZwANWEzVq6Ots3M3VtVkoZ6WJA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nhiep\\Desktop\\Baking Ingredients\\SE1616_Group3_Project\\SE1616_Group3_Project\\SE1616_Group3_Project.csproj",
+  "projectFilePath": "C:\\Users\\nhiep\\Music\\repos\\bakeryshop\\SE1616_Group3_Project\\SE1616_Group3_Project\\SE1616_Group3_Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nhiep\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\nhiep\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
